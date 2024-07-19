@@ -1,17 +1,10 @@
-tipoDeCombustivel = str(input("Qual o tipo de combustível? "))
-valorDinheiro = int(input("Qual o valor que deseja gastar? "))
-gasolina = 2.53
-etanol = 2.09
-diesel = 1.92
-if (tipoDeCombustivel == "Gasolina"):
-    litros = valorDinheiro / gasolina
-    print(f"Litros: {litros:.2f} e não ganhou troca de óleo")
-elif(tipoDeCombustivel == "Etanol"):
-    litros = valorDinheiro / etanol
-    if(litros > 30):
-        print(f"Litros: {litros:.2f} e ganhou troca de óleo")
-    else:
-        print(f"Litros: {litros:.2f} e não ganhou troca de óleo")
-elif(tipoDeCombustivel == "Diesel"):
-    litros = valorDinheiro / diesel 
-    print(f"Litros: {litros:.2f} e não ganhou troca de óleo")
+numero1 = int(input("Escreva um numero: "))
+numero2 = int(input("Escreva um numero: "))
+numero3 = int(input("Escreva um numero: "))
+
+if (numero1 > numero2) and (numero1 > numero3):
+  print(f"{numero1} é o maior número")
+elif(numero2 > numero1) and (numero2 > numero3):
+  print(f"{numero2} é o maior número")
+else:
+  print(numero3)
