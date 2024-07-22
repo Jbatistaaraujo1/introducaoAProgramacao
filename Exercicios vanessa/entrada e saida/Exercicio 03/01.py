@@ -1,8 +1,9 @@
 quantConvi = int(input("Quantidade de convidados: "))
 precoRodz = int(input("Preço do Rodízio: "))
+rodgrat = quantConvi // 10
 
 if (quantConvi >= 10):
-    valortotal = (quantConvi - 1) * precoRodz 
+    valortotal = (quantConvi - rodgrat) * precoRodz 
 else:
     valortotal = quantConvi * precoRodz
     
