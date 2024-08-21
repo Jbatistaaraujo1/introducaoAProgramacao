@@ -3,6 +3,7 @@ maiorIdade = 0
 jovens = 0
 idoso = 0
 quantIdoso = 0
+
 while (idade >=0):
     if idade < 20:
         jovens += 1
