@@ -9,4 +9,6 @@ for cont in range(1,5,1):
         votosAurelio += 1
     elif voto == "branco":
         votosBranco += 1
-if 
+if votosMarcilio > votosAurelio: 
+    print()
+    #
