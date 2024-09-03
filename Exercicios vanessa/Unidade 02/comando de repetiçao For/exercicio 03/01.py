@@ -1,7 +1,7 @@
 quantAno = 0
 valorTotal = 0
 valorAntigo = 0
-for cont in range(1,4,1):
+for cont in range(1,1501):
     descricao = str.lower(input("Escreva a descrição do item: "))
     valor = int(input("Escreva o valor do item: "))
     ano = int(input("Escreva o ano do item: "))
