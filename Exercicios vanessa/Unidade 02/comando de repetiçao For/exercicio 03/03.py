@@ -24,7 +24,14 @@ for cont in range (1):
         precoTotal += preco
         quantDecoracao += 1
 print()
-
+totalMovel = totalBranco + totalMarfim
+if totalBranco >=1:
+    percentualBranco = (totalMovel / totalBranco) * 100
+elif totalMarfim >=1:    
+    percentualMarfim = (totalMovel / totalMarfim) * 100
+else:
+    print("Não foi vendido nenhum móvel")  
+print(f"Percentual marfim {percentualMarfim}, percentual branco {percentualBranco}")
 if(totalBras >= 1) or (totalEletro >=1):
     if totalBras > totalEletro:
         print(f"Marca mais Vendida: Brastemp")
