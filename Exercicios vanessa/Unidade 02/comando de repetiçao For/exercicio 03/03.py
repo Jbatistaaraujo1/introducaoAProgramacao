@@ -25,13 +25,12 @@ for cont in range (1):
         quantDecoracao += 1
 print()
 totalMovel = totalBranco + totalMarfim
-if totalBranco >=1:
-    percentualBranco = (totalMovel / totalBranco) * 100
-elif totalMarfim >=1:    
-    percentualMarfim = (totalMovel / totalMarfim) * 100
-else:
+if totalMovel == 0:
     print("Não foi vendido nenhum móvel")  
-print(f"Percentual marfim {percentualMarfim}, percentual branco {percentualBranco}")
+else:
+    percentualBranco = totalMovel / totalBranco
+    percentualMarfim = totalMovel / totalMarfim
+print(f"O percentual de branco foi {percentualBranco}, e o de marfim foi {percentualMarfim}")
 if(totalBras >= 1) or (totalEletro >=1):
     if totalBras > totalEletro:
         print(f"Marca mais Vendida: Brastemp")
