@@ -1,13 +1,8 @@
-# Inicializando uma lista vazia
-numeros = []
+import random
+quantNumeros = 10
+lista = []
 
-# Solicitando ao usuário para inserir 8 números
-for i in range(8):
-    numero = int(input(f"Digite o número {i+1}: "))
-    numeros.append(numero)
+numero = [random.randint(1,100) for i in range(quantNumeros)]
+lista.append(numero)
 
-# Exibindo os números que são múltiplos de 3
-print("Números múltiplos de 3:")
-for numero in numeros:
-    if numero % 3 == 0:
-        print(numero)
+print(lista)
