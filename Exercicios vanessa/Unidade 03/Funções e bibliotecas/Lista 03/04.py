@@ -7,4 +7,7 @@ for i in range(80):
         valorTotal += bibGaleriaArte.consultaPreco(nome)
         quantQuadros += 1
 media = valorTotal / quantQuadros
-print(media)
+if quantQuadros >= 1:
+    print(media)
+else:
+    print("Não há quadros")

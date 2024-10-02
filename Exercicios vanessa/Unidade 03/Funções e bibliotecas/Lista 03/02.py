@@ -10,5 +10,7 @@ for i in range(50):
         quantEsculturas += 1
 if quantQuadros > quantEsculturas:
     print("Dispõe de uma quantidade maior de quadros")
-else:
+elif quantEsculturas > quantQuadros:
     print("Dispõe de uma quantidade maior de esculturas")
+else:
+    print("A quantidade de quadros e esculturas são iguais")

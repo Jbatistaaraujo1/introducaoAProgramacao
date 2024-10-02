@@ -8,4 +8,7 @@ for i in range(30):
     if bibGaleriaArte.consultaArtista(Obras[i]) == "adélia machado":
         if bibGaleriaArte.consultaTipo.lower() == "escultura":
             quantEsculturas += 1
-print(quantEsculturas)
+if quantEsculturas >= 1:
+    print(quantEsculturas)
+else:
+    print("Não há esculturas de Adélia Machado")
