@@ -18,4 +18,24 @@ def multiplicaLista(lista, valor):
             novaLista.append(lista[i] * valor)
         return novaLista
 
+def Busca(lista, valor):
+    if len(lista) == 0:
+        return False
+    if valor in lista:
+        return True
+    else:
+        return False
+    
+def ContaOcorrencias(lista, valor):
+    quantVezes = 0
+    for i in range(len(lista)):
+        if lista[i] == valor:
+            quantVezes += 1
+    return quantVezes
 
+def RemoveValor(lista, valor):
+    novalista = []
+    for i in range(len(lista)):
+        if lista[i] != valor:
+            novalista.append(lista[i])
+    return novalista
