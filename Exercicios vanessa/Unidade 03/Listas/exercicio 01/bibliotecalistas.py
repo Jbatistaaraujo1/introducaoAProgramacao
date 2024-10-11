@@ -39,3 +39,17 @@ def RemoveValor(lista, valor):
         if lista[i] != valor:
             novalista.append(lista[i])
     return novalista
+
+def SemRepeticao(lista):
+    novalista = []
+    for i in range(len(lista)):
+        if lista[i] not in novalista:
+            novalista.append(lista[i])
+    return novalista
+
+def TestaOrdenacao(lista):
+    for i in range(len(lista) - 1):
+        if lista[i] > lista[i + 1]:
+            return False
+    return True
+        
