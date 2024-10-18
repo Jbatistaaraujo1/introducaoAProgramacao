@@ -1,5 +1,8 @@
-string = str(input("Escreva uma string: "))
-letra = str(input("Escreva uma letra a ser buscada: "))
+string = str.lower(input("Escreva uma string: "))
+letra = str.lower(input("Escreva uma letra a ser buscada: "))
 
-for i in range(len(string)):
-    
+
+if letra in string:
+    print("Está Presente")
+else:
+    print("Não Está Presente")
