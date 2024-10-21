@@ -1,12 +1,13 @@
 def contemVogal(string):
     vogais = ["a","e","i","o","u"]
     quantVogal = 0
-    for i in range(len(string)):
-        if  string[i].lower() in vogais:
+    for i in range(len(vogais)):
+        print(i)
+        if  vogais[i].lower() in string:
             quantVogal += 1
-        if quantVogal == 0:
-            print("False")
-        else:
-            print("True")
+    if quantVogal >= 1:
+        return True
+    else:
+        return False
    
-contemVogal("joao")
+print(contemVogal("tubo"))
